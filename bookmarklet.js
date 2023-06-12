@@ -198,30 +198,24 @@ javascript: (() => {
             /* Insert link to Marketing Center Parser */
             let header = document.querySelector('.row.main');
             const mcParseUrlDiv = document.createElement("div");
-
             header.insertBefore(mcParseUrlDiv, header.firstElementChild);
-
             let mcParseUrl = `https://www.stralyfamily.com/toolkit/marketing_center_parser/?integration_type=onesite&id=${lscid}`;
             let mcParseUrlText = document.createElement("p");
             let mcParseUrlAnchor = document.createElement("p");
             mcParseUrlText.innerHTML = `Marketing Center Parser`;
             mcParseUrlAnchor.innerHTML = `<a href=${mcParseUrl} target="_blank">${mcParseUrl}</a>`;
-
             mcParseUrlDiv.setAttribute('id', 'mcParseDiv');
-
             mcParseUrlDiv.style.padding = '1em';
             mcParseUrlDiv.style.borderRadius = '15px';
             mcParseUrlDiv.style.textAlign = 'center';
             mcParseUrlDiv.style.color = '#406098';
             mcParseUrlDiv.style.background = '#cae4ee';
-            mcParseUrlDiv.style.boxShadow = '2px 2px 5px black';
+            mcParseUrlDiv.style.border = '2px solid currentColor';
             mcParseUrlText.style.fontSize = '2em';
             mcParseUrlAnchor.style.fontSize = '1.25em';
             mcParseUrlAnchor.querySelector('a').style.color = '#3A539B';
-
             mcParseUrlDiv.appendChild(mcParseUrlText);
             mcParseUrlDiv.appendChild(mcParseUrlAnchor);
-
             clearAlert();
         }
         fillData();
