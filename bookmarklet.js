@@ -1,4 +1,3 @@
-
 /* This is a quick configuration section for information you may want to configure */
 const vendorUserName = '';
 const vendorPass = '';
@@ -75,10 +74,10 @@ if (lscid.length > 0) {
     }
 
     console.log('Started Integration Dashboard Helper');
-    let proxyUrl = 'https://proxy.stralyfamily.com/index/proxy.php';
+    let proxyUrl = 'https://www.stralyfamily.com/proxy/';
 
     let mcUrl = `https://api.myleasestar.com/v2/properties/map?partnername=OneSite&lscid=${encodeURIComponent(lscid)}`;
-    let requestUrl = `${proxyUrl}?url=${encodeURIComponent(mcUrl)}`;
+    let requestUrl = `${proxyUrl}?target=${encodeURIComponent(mcUrl)}`;
 
     async function fetchData(requestUrl) {
         try {
