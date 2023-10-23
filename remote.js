@@ -1,5 +1,5 @@
 javascript:(function() {
-    var rawFileUrl = 'https://raw.githubusercontent.com/lake-straly/g5-mc-onesite-autofill/main/bookmarklet.js';
+    var rawFileUrl = 'https://raw.githubusercontent.com/lake-straly/g5-mc-onesite-autofill/staging/bookmarklet.js';
     fetch(rawFileUrl)
         .then(response => response.text())
         .then(code => {
